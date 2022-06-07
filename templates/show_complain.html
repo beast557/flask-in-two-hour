@@ -1,0 +1,37 @@
+{%extends 'header.html'%}
+{%block body%}
+<div class="container mt-4 show_complain">
+    
+<h3>Complains Filled By People</h3>
+<hr>
+
+    <table className="order-list">
+    <tr>
+        <th>SN</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>By</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    {% for result in results %}
+    <tr>
+       <td>{{result.id}}</td>
+       <td>{{result.name}}</td>
+       <td>{{result.description}}</td>
+       <td>{{result.location}}</td>
+       <td>{{result.first_name}}</td>
+       <td>{% if result.status %}
+           {{result.status}}
+           {%else%}
+           Unchecked
+           {%endif%}
+       </td>
+        <td><a href="{{url_for('update_case',id=result.id)}}" class="btn btn-secondary">Update</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+
+    {%endblock%}

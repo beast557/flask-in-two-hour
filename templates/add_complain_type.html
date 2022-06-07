@@ -1,0 +1,20 @@
+{%extends 'header.html'%}
+
+{%block body%}
+<div class="container py-4 mb-3">
+<H2>Add Complain Types</H2>
+<form method="post">
+    <label class="mt-4">Name</label>
+    <input class="py-2" type="text" name="name" />
+    <br>
+    <label class="mt-4">Description</label>
+    <textarea class="py-2 mt-4" name="description" placeholder="Description" cols="30" rows="10" >
+    </textarea>
+    <br>
+    <label class="mt-4">Added By:</label>
+    <input type="text" class="py-2" value="{{session.email}}" disabled/>
+    <br>
+    <button class="mt-4 py-2 btn btn-primary" type="submit" name="submit">Submit</button>
+</form>
+</div>
+{%endblock%}

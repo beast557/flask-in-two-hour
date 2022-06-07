@@ -1,0 +1,77 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.login .remember-me{
+    margin-left: 8px;
+    /* color: blue; */
+}
+.login .border{
+    border: 5px solid black;
+
+}
+
+.admin-pannel a{
+    text-decoration: none;
+    background-color: rgb(24, 24, 212);
+    color: white;
+    padding: 10px 15px;
+}
+.admin-pannel a:hover{
+    background-color: rgb(92, 92, 199);
+}
+/* .show_complain{
+
+} */
+
+.order-list{
+    margin-top: 2em;
+}
+.order-list h1{
+    color: var(--light-color-100);
+    font-size: 2rem;
+}
+
+.order-list .order-table{
+    border:1px solid var(--light-color-100);
+    background-color: var(--light-color-100);
+}
+
+.order-list .order-table .order-table-header,
+.order-list .order-table .order-table-body
+{
+    font-size: 0.8rem;
+
+}
+
+.order-list .order-table .order-table-header{
+    font-family: 700;
+}
+
+.order-list .order-table .order-table-header p,
+.order-list .order-table .order-table-body p {
+    padding-inline: 1em;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+    margin-right: 2em;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.update_case{
+ background-color: red;
+}
+.opac{
+    /* color: rgb(75, 73, 73); */
+    color: rgb(97, 97, 114);
+}

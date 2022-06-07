@@ -1,0 +1,26 @@
+{% extends 'header.html' %}
+{% block body %}
+<form method="post" class="container  login border py-4 mt-3">
+    <label for="first" class="mt-4">First Name:</label><br>
+    <input type="text" name="first_name" placeholder="John" required class="p-2"/>
+    <br>
+    <label for="last" class="mt-4">Last Name:</label><br>
+    <input type="text" name="last_name" placeholder="Doe" required class="p-2"/>
+   <br>
+    <label for="email" class="mt-4">Email:</label><br>
+    <input type="email" name="email" placeholder="Johndoe123@gmail.com" required class="p-2"/>
+<br>
+<label for="password" class="mt-4">Password:</label><br>
+    <input type="password" name="password" placeholder="Password" required class="p-2"/>
+     <br>
+     <label for="contact" class="mt-4">Phone number:</label><br>
+    <input type="Text" name="phone_number" placeholder="+977-9812075632" required class="p-2"/>
+    <br>
+    <div class="mt-4 mb-4">
+    <input type="checkbox" class="p-2"/>
+    <span>I accept every terms and conditions</span>
+    </div>
+
+    <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
