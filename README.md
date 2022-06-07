@@ -1,6 +1,6 @@
 # flask-in-two-hour
-I made this app in 2 hour 
+I made this app in 2 hours 
 you can find database queries in dump folder
 
-I challenged myself so this is not perfect website.
+This is a challenged to myself so this is not perfect website.
 It not for any production use.
